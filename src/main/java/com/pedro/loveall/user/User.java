@@ -19,17 +19,17 @@ public class User {
     @Column(nullable = false, updatable = false)
     private UUID id;
 
-    @Column (nullable = false, length = 254)
+    @Column(nullable = false, length = 254)
     private String email;
 
-    @Column (nullable = false, length = 255)
+    @Column(nullable = false, length = 255)
     private String passwordHash;
 
-    @Column (nullable = false, length = 100)
+    @Column(nullable = false, length = 100)
     private String name;
 
     @CreationTimestamp
-    @Column (nullable = false, updatable = false)
+    @Column(nullable = false, updatable = false)
     private Instant createdAt;
 
     public User(String email, String passwordHash, String name) {
