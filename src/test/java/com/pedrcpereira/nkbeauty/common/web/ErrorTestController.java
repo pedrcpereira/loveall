@@ -27,17 +27,17 @@ public class ErrorTestController {
     }
 
     @GetMapping("/not-found")
-    void notFound() throws NotFoundException {
+    void notFound() {
         throw new NotFoundException("Not found");
     }
 
     @GetMapping("/conflict")
-    void conflict() throws ConflictException {
+    void conflict() {
         throw new ConflictException("Conflict", Map.of("field", "email"));
     }
 
     @GetMapping("/unexpected")
-    void unexpected() throws RuntimeException {
+    void unexpected() {
         throw new RuntimeException("secret detail");
     }
 }

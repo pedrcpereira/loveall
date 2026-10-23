@@ -8,7 +8,7 @@ public class ConflictException extends RuntimeException {
 
     public ConflictException(String message) {
         super(message);
-        this.properties = new HashMap<>();
+        this.properties = Map.copyOf(new HashMap<>());
     }
 
     public ConflictException(String message, Map<String, Object> properties) {

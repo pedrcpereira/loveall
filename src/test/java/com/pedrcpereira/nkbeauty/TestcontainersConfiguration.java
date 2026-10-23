@@ -8,7 +8,6 @@ import org.testcontainers.postgresql.PostgreSQLContainer;
 import org.testcontainers.utility.DockerImageName;
 
 @TestConfiguration(proxyBeanMethods = false)
-@Import(org.testcontainers.utility.TestcontainersConfiguration.class)
 public class TestcontainersConfiguration {
 
 	@Bean
