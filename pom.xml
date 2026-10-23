@@ -8,11 +8,11 @@
 		<version>4.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.pedro</groupId>
-	<artifactId>loveall</artifactId>
+	<groupId>com.pedrcpereira</groupId>
+	<artifactId>nicole-kentta-beauty</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
+	<name>Nicole Kenttä Beauty</name>
+	<description>Custom booking tool for Nicole Kenttä Beauty</description>
 	<url/>
 	<licenses>
 		<license/>
