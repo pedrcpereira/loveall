@@ -10,7 +10,7 @@ import org.springframework.test.web.servlet.assertj.MockMvcTester;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @WebMvcTest(ErrorTestController.class)
-public class GlobalExceptionHandlerTest {
+class GlobalExceptionHandlerTest {
 
     @Autowired
     private MockMvcTester mvc;
@@ -47,7 +47,8 @@ public class GlobalExceptionHandlerTest {
                         """))
                 .hasStatus(HttpStatus.BAD_REQUEST)
                 .hasContentType(MediaType.APPLICATION_PROBLEM_JSON)
-                .bodyJson().extractingPath("$.errors.name").isNotNull();
+                .bodyJson().extractingPath("$.errors").asMap()
+                .containsOnlyKeys("name", "email");;
     }
 
     @Test
