@@ -1,4 +1,4 @@
-package com.pedro.loveall.user;
+package com.pedrcpereira.nkbeauty.user;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;

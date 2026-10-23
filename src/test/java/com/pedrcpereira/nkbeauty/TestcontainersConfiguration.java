@@ -1,4 +1,4 @@
-package com.pedro.loveall;
+package com.pedrcpereira.nkbeauty;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
